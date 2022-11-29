@@ -5,7 +5,7 @@
 Протестировать решение можно через Docker введя в терминале команду (Заменив вместо **** любой свободный порт, например 8000):
 
 ```
-docker run -dp ****:8000 sidikayfuy/test_stripe_2:latest
+docker run -dp ****:8000 sidikayfuy/test_stripe_3:latest
 ```
 
 Данные для админки:
