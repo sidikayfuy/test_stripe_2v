@@ -1,0 +1,22 @@
+{% extends 'teststripe/layout.html' %}
+
+{% block title %}
+    {{ item.name }}
+{% endblock %}
+
+{% block content %}
+    <div class="container mt-5">
+        <div class="card">
+            <h5 class="card-header">{{ item.name }}</h5>
+            <div class="card-body">
+                <p class="card-text">{{ item.description }}</p>
+                <p style="display: inline-block">Количество</p>
+                <input type="number" step="1" min="1" value="1" id="count" style="display: inline">
+                <input type="text" hidden value="{{ item.id }}" id="item_id">
+                <br>
+                <button class="btn btn-primary" id="buy">Купить</button>
+                <button class="btn btn-secondary" id="addtocart">Добавить в корзину</button>
+            </div>
+        </div>
+    </div>
+{% endblock %}
